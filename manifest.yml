@@ -1,0 +1,15 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: chl-iot-test-001
+  host: chl-iot-test-001
+  disk_quota: 1024M
+  services:
+  - Object Storage-ny
+  - chl-iot-test-001-cloudantNoSQLDB
+  - chl-iot-test-001-iotf-service
+  env:
+    NODE_RED_USERNAME: mychhl
+    NODE_RED_PASSWORD: zhu88jie
